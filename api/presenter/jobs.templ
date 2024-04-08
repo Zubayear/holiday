@@ -1,0 +1,13 @@
+package presenter
+
+import "github.com/Zubayear/holiday/pkg/entities"
+
+templ Jobs(jobs []*entities.Job) {
+	<div>
+	<ul>
+	for _, job := range jobs {
+	    <li>{job.JobName}</li>
+	}
+	</ul>
+	</div>
+}
